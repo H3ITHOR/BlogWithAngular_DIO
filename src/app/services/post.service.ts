@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Post } from '../models/post.model'; // Assuming you have a Post model defined
+import { Post } from '../models/post.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PostService {
-  private apiUrl = 'https://api.example.com/posts'; // Replace with your API URL
+  private apiUrl = 'https://api.example.com/posts';
 
   constructor(private http: HttpClient) {}
 
